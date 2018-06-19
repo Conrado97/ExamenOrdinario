@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		1DE1A4A74617F6F905FBEC3F /* Pods_ExamenOrdinario.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70584DA82E6A21C1F744F80 /* Pods_ExamenOrdinario.framework */; };
 		443DF67020D8FEDA008650BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443DF66F20D8FEDA008650BC /* AppDelegate.swift */; };
-		443DF67220D8FEDA008650BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443DF67120D8FEDA008650BC /* ViewController.swift */; };
+		443DF67220D8FEDA008650BC /* BienvenidoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 443DF67120D8FEDA008650BC /* BienvenidoViewController.swift */; };
 		443DF67520D8FEDA008650BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443DF67320D8FEDA008650BC /* Main.storyboard */; };
 		443DF67720D8FEDC008650BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 443DF67620D8FEDC008650BC /* Assets.xcassets */; };
 		443DF67A20D8FEDC008650BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 443DF67820D8FEDC008650BC /* LaunchScreen.storyboard */; };
@@ -40,7 +40,7 @@
 /* Begin PBXFileReference section */
 		443DF66C20D8FEDA008650BC /* ExamenOrdinario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExamenOrdinario.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		443DF66F20D8FEDA008650BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		443DF67120D8FEDA008650BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		443DF67120D8FEDA008650BC /* BienvenidoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BienvenidoViewController.swift; sourceTree = "<group>"; };
 		443DF67420D8FEDA008650BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		443DF67620D8FEDC008650BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		443DF67920D8FEDC008650BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -127,7 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				443DF66F20D8FEDA008650BC /* AppDelegate.swift */,
-				443DF67120D8FEDA008650BC /* ViewController.swift */,
+				443DF67120D8FEDA008650BC /* BienvenidoViewController.swift */,
 				443DF67320D8FEDA008650BC /* Main.storyboard */,
 				443DF67620D8FEDC008650BC /* Assets.xcassets */,
 				443DF67820D8FEDC008650BC /* LaunchScreen.storyboard */,
@@ -463,7 +463,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				443DF67220D8FEDA008650BC /* ViewController.swift in Sources */,
+				443DF67220D8FEDA008650BC /* BienvenidoViewController.swift in Sources */,
 				443DF67020D8FEDA008650BC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -640,7 +640,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ExamenOrdinario/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = CONRADITOMARINERO.ExamenOrdinario;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -655,7 +658,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ExamenOrdinario/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = CONRADITOMARINERO.ExamenOrdinario;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -671,7 +677,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ExamenOrdinarioTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = CONRADITOMARINERO.ExamenOrdinarioTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -688,7 +698,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ExamenOrdinarioTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = CONRADITOMARINERO.ExamenOrdinarioTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -704,7 +718,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ExamenOrdinarioUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = CONRADITOMARINERO.ExamenOrdinarioUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -720,7 +738,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ExamenOrdinarioUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = CONRADITOMARINERO.ExamenOrdinarioUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
