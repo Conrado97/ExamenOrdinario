@@ -8,11 +8,16 @@
 
 import UIKit
 
-class BienvenidoViewController: UIViewController {
-
+class BienvenidoViewController:UIViewControlle{
+    @IBOutlet weak var loginButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        loginButton.layer.borderWidth = 2
+        loginButton.layer.cornerRadiusv = 10
+        loginButton.layer.borderColor = UIColor.white.cgColor
+        
     }
 
     override func didReceiveMemoryWarning() {
